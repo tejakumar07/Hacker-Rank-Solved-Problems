@@ -1,0 +1,14 @@
+#This is the second method to solve the list comprehensions
+#In this let's try to solve this problem using list comprehension
+
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+
+    l = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if (i+j+k)!=n]
+
+    print(l)
+
